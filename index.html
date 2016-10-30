@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Funding Circle provides loans for small business and start up companies.">
+    <meta name="author" content="Funding Circle - Brett Senna">
+    <meta name="keywords" content="Funding Circle, venture capitolist, start up funding, small business loans">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Funding Circle - Front End Developer Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    
+    <!-- Custom Google Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Work+Sans" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <header>
+    <nav class="navbar">
+      <div class="container hidden-xs">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-4">
+                  <a class="navbar-brand large-logo" href="./"><img class="img-responsive" src="img/logo.png" alt="Funding Circle - Small Business Loans"></a>
+              </div>
+              <div class="hidden-lg hidden-md col-sm-8 hidden-xs md-sub-menu">
+                    <div class="dropdown pull-right">
+                        <button class="btn dropdown-toggle country-select" type="button" data-toggle="dropdown">
+                            <img src="https://static.fundingcircle.com/img/core/flags/us-bc559de7.svg" alt="Flag of the United States" class="country-select_flag">
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a data-country-select="de" href="javascript:void(0)" title="Germany" class="country-select_item"><img src="https://static.fundingcircle.com/img/core/flags/de-dd7a8401.svg" alt="Flag of Germany" class="country-select_flag">Germany</a></li>
+                            <li><a data-country-select="nl" href="javascript:void(0)" title="The Netherlands" class="country-select_item"><img src="https://static.fundingcircle.com/img/core/flags/nl-e23d3752.svg" alt="Flag of The Netherlands" class="country-select_flag">The Netherlands</a></li>
+                            <li><a data-country-select="es" href="javascript:void(0)" title="Spain" class="country-select_item"><img src="https://static.fundingcircle.com/img/core/flags/es-c32d05ae.svg" alt="Flag of Spain" class="country-select_flag">Spain</a></li>
+                            <li><a data-country-select="uk" href="javascript:void(0)" title="United Kingdom" class="country-select_item"><img src="https://static.fundingcircle.com/img/core/flags/uk-87abe09d.svg" alt="Flag of the United Kingdom" class="country-select_flag">United Kingdom</a></li>
+                            <li><a data-country-select="us" href="javascript:void(0)" title="United States" class="country-select_item"><img src="https://static.fundingcircle.com/img/core/flags/us-bc559de7.svg" alt="Flag of the United States of America" class="country-select_flag">United States</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav user-nav pull-right cta-nav">
+                      <li><a href="javascript:void(0)">Apply Now</a></li>
+                      <li><a href="javascript:void(0)">Sign In</a></li>
+                    </ul>   
+                    <ul class="nav pull-right contact-info">
+                      <li><a href="tel:+18553855356">(855) 385-5356</a></li>
+                      <li><a href="javascript:void(0)">Mon-Fri 8am-8pm PT</a></li>
+                    </ul>
+              </div>
+              <div class="col-lg-6 hidden-sm hidden-xs">
+              <ul class="nav navbar-nav user-nav pull-right">
+                <li><a href="javascript:void(0)">Apply Now</a></li>
+                <li><a href="javascript:void(0)">Sign In</a></li>
+              </ul>
+              </div>
+          </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+            <div id="navbar-lg">
+            <ul class="nav navbar-nav">
+                <li><a href="javascript:void(0)">Business Loans</a></li>
+                <li><a href="javascript:void(0)">Invest</a></li>
+                <li><a href="javascript:void(0)">Partner</a></li>
+                <li><a href="javascript:void(0)">About</a></li>
+              </ul>
+            </div><!--/.navbar-collapse -->
+            </div>
+            <div class="col-lg-6 hidden-sm hidden-xs">
+              <ul class="nav navbar-nav pull-right contact-info">
+                <li><a href="tel:+18553855356">(855) 385-5356</a></li>
+                <li><a href="javascript:void(0)">Mon-Fri 8am-8pm PT</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="container hidden-lg hidden-md hidden-sm">
+          <div class="row small-header">
+              <div class="col-xs-4">
+                <a class="navbar-brand small-brand" href="#"><img class="img-responsive" src="img/logo-sml.png" alt="Funding Circle - Small Business Loans"></a>
+              </div>
+              <div class="col-xs-4">
+                  <center>
+                     <button class="btn btn-cta">Apply Now</button>
+                  </center>
+              </div>
+              <div>
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="javascript:void(0)">Business Loans</a></li>
+                    <li><a href="javascript:void(0)">Invest</a></li>
+                    <li><a href="javascript:void(0)">Partner</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+                  </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+      </div>
+    </nav>
+  </header>
+    <!-- Main jumbotron -->
+    <div class="jumbotron welcome">
+      <div class="container">
+          <center>
+        <h1>A smarter way to get a business loan</h1>
+        <h3>Over $2 billion lent to small businesses globally.</h3>
+        <button class="btn btn-cta hidden-xs">Apply Now</button>
+        <p>Pictured: Peter Koshland of Koshland Pharm</p>
+        </center>
+      </div>
+    </div>
+
+    <div class="container offer">
+      <div class="row offer-row">
+          <center>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <center>
+              <h1 class="section-header">What we offer</h1>
+               </center>
+              <br/>
+              <div class="flex-container">
+            <div class="flex-item col-lg-2 col-md-4 col-sm-12 col-xs-12 col-lg-offset-3">
+                <center>
+                <div class="arrow-down hidden-lg hidden-md hidden-sm"></div>
+                <p>Rates start at</p>
+                <h2 class="offer-big">5.49&percnt;</h2>
+                </center>
+            </div>
+            <div class="flex-item col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                <center>
+                <div class="arrow-down hidden-xs"></div>
+                <p>Loans from</p>
+                <h2 class="offer-big">&dollar;25k - &dollar;500k</h2>
+                <p>with 1-5 year terms</p>
+                </center>
+            </div>
+            <div class="flex-item col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                <center>
+                <p>Funding in under</p>
+                <h2 class="offer-big">10 days</h2>
+                </center>
+            </div>
+            </div>
+          </div>
+          </center>    
+      </div>
+    </div>
+    <!-- possibilities -->
+    <div class="container-fluid possibilities">
+        <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+          <center>      
+          <h1 class="section-header">The possibilities</h1>
+          <h5>Here are just some of the things you can do with a Funding Circle loan</h5>
+          <br/>
+          </center>
+          </div>
+          <center>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default hover-show">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="img/possibilities-1.png" alt="Build your Business">
+                        <p><b>Move or expand your space</b></p>
+                        </div>
+                    </div>
+                </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="img/possibilities-2.png" alt="Get rid of debt">
+                        <p><b>Refinance Debt</b></p>
+                        </div>
+                    </div>
+                </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="img/possibilities-3.png" alt="Buy equipment">
+                        <p><b>Buy inventory or equipment</b></p>
+                    </div>
+                </div>
+          </div>
+       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="img/possibilities-4.png" alt="Hire Employees">
+                        <p><b>Hire more people</b></p>
+                    </div>
+                </div>
+          </div>
+          </center>
+      </div>
+      </div>
+    </div>
+    <!--end possibilities -->
+    <!-- processes -->
+    <div class="container-fluid processes">
+        <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+          <center>      
+          <h1>Our Simple Process</h1>
+          <br/>
+          </center>
+          </div>
+              <ul class="timeline timeline-horizontal hidden-md hidden-sm hidden-xs">
+                  <li class="timeline-item col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                      <div class="timeline-badge primary"></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-body">
+                              <div>
+                                  <h5>Check your eligibility</h5>
+                                  <p class="fc-blue">In 60 seconds</p>
+                                  <p>By completing our easy online application.</p>    
+                              </div>
+                              <img src="img/processes-1.png" alt="Build your Business">
+                          </div>
+                      </div>
+                  </li>
+                  <li class="timeline-item col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                      <div class="timeline-badge primary"></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-body">
+                              <div>
+                              <h5>Hear from us</h5>
+                              <p class="fc-blue">Within 10 minutes</p>
+                              <p>Your dedication loan specialist is here to help you every step of the way.</p>
+                              </div>
+                              <img src="img/processes-2.png" alt="Get rid of debt">
+                          </div>
+                      </div>
+                  </li>
+                  <li class="timeline-item col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                      <div class="timeline-badge primary"></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-body">
+                              <div>
+                              <h5>Get a decision</h5>
+                              <p class="fc-blue">Within 72 hours</p>
+                              <p>After we review your application.</p>
+                              </div>
+                              <img src="img/processes-3.png" alt="Buy equipment">
+                          </div>
+                  </li>
+                  <li class="timeline-item col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                      <div class="timeline-badge primary"></div>
+                      <div class="timeline-panel">
+                          <!--<div class="timeline-heading">
+                          </div>-->
+                          <div class="timeline-body">
+                              <div>
+                                  <h5>You get funded</h5>
+                                  <p class="fc-blue">Within 10 days</p>
+                                  <p>Once approved, you'll receive funds within days.</p>
+                              </div>
+                                  <img src="img/processes-4.png" alt="Hire employees">
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          <!-- horizontal timeline for col-sm-12 -->
+          <ul class="timeline sm-timeline hidden-lg hidden-xs">
+              <li class="timeline-item">
+                  <div class="timeline-badge"></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-body">
+                          <img src="img/processes-1.png" alt="Build your Business">
+                          <div>
+                              <h5>Check your eligibility</h5>
+                              <p class="fc-blue">In 60 seconds</p>
+                              <p>By completing our easy online application.</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-item">
+                  <div class="timeline-badge"></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-body">
+                          <img src="img/processes-2.png" alt="Get rid of debt">
+                          <div>
+                              <h5>Hear from us</h5>
+                              <p class="fc-blue">Within 10 minutes</p>
+                              <p>Your dedication loan specialist is here to help you every step of the way.</p>
+                          </div>    
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-item">
+                  <div class="timeline-badge"></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-body">
+                          <img src="img/processes-3.png" alt="Buy equipment">
+                          <div>
+                              <h5>Get a decision</h5>
+                              <p class="fc-blue">Within 72 hours</p>
+                              <p>After we review your application.</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-item">
+                  <div class="timeline-badge"></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-body">
+                          <img src="img/processes-4.png" alt="Hire employees">
+                          <div>
+                              <h5>You get funded</h5>
+                              <p class="fc-blue">Within 10 days</p>
+                              <p>Once approved, you'll receive funds within days.</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <!-- end horizontal -->
+          <div class="process-sml">
+          <div class="hidden-lg hidden-md hidden-sm col-xm-12">
+                <img src="img/processes-1.png" alt="Build your Business">
+                <h5>Check your eligibility</h5>
+                <p class="fc-blue">In 60 seconds</p>
+                <p>By completing our easy online application.</p>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm col-xm-12">
+                <img src="img/processes-2.png" alt="Get rid of debt">
+                <h5>Hear from us</h5>
+                <p class="fc-blue">Within 10 minutes</p>
+                <p>Your dedication loan specialist is here to help you every step of the way.</p>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm col-xm-12">
+                <img src="img/processes-3.png" alt="Buy equipment">
+                <h5>Get a decision</h5>
+                <p class="fc-blue">Within 72 hours</p>
+                <p>After we review your application.</p>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm col-xm-12">
+                <img src="img/processes-4.png" alt="Hire employees">
+                <h5>You get funded</h5>
+                <p class="fc-blue">Within 10 days</p>
+                <p>Once approved, you'll receive funds within days.</p>
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <!-- end processes -->
+    <!-- testimonial -->
+    <div class="jumbotron testimonial hidden-xs">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-sm-8 col-xs-12">
+            <blockquote>
+                <p>“Our business grew 300% in the past year. A lot of that happened since we got our loan from Funding Circle.”</p>
+                <footer>Dara Kennedy, CEO of Ayla Beauty</footer>
+            </blockquote>
+            <a href="javascript:void(0)" class="btn btn-cta">Read Her Story</a>
+        </div>
+            <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6 col-xs-12">
+                <div class="testimonial-descr">
+                    <p>Industry:</p>
+                    <p><b>Retail</b></p>
+                    <br/>
+                    <p>Loan Details:</p>
+                    <p><b>&dollar;4250/mo. for 48 months</b></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- small testimonial -->
+      <img class="img-responsive hidden-lg hidden-md hidden-sm" src="img/story-bg-img.jpg" alt="Dara Kennedy CEO of Ayla Beauty testimonial">
+      <div class="container-fluid hidden-lg hidden-md hidden-sm">
+            <div class="row">
+            <div class="col-xs-12">
+            <blockquote>
+                <p>“Our business grew 300% in the past year. A lot of that happened since we got our loan from Funding Circle.”</p>
+                <footer>Dara Kennedy, CEO of Ayla Beauty</footer>
+            </blockquote>
+            <a href="javascript:void(0)" class="btn btn-cta">Read Her Story</a>
+            <br/>
+            <br/>
+        </div>
+        </div>
+      </div>
+    <div class="container-fluid sml-testimonial hidden-lg hidden-md hidden-sm">
+        <div class="row"> 
+            <div class="col-xs-12">
+                <div class="testimonial-descr">
+                    <center><div class="arrow-down"></div></center>
+                    <p>Industry:</p>
+                    <p><b>Retail</b></p>
+                    <br/>
+                    <p>Loan Details:</p>
+                    <p><b>&dollar;4250/mo. for 48 months</b></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- end testimonial -->
+    <!-- carousel -->
+    <div class="container">
+    <div class="row">       
+    <div class="col-lg-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <center><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+        <h3>“No fuss - just plenty of action</h3></center>
+        <blockquote>Funding Circle makes a loan application really simple and without fuss. This is the second time we have asked for, and received, a loan and we are really impressed by the way it does business.”
+<footer> Adrian Wolf</footer></blockquote>
+        <div class="carousel-trustpilot"><p><b> Excellent </b><img src="img/stars-trustpilot.png" alt="trust pilot star rating"> based on 1364 reviews <img src="img/trustpilot-logo.png" alt="trust pilot rating"></p></div>
+    </div>
+
+    <div class="item">
+        <center><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+        <h3>“Great service</h3></center>
+        <blockquote>Used Funding Circle for the first time recently, found them to be professional, transparent and efficient. Will definitely use them again and happy to recommend them to others.”
+<footer> Kevin Shaun</footer></blockquote>
+        <div class="carousel-trustpilot"><p><b> Excellent </b><img src="img/stars-trustpilot.png" alt="trust pilot star rating"> based on 1364 reviews <img src="img/trustpilot-logo.png" alt="trust pilot rating"></p></div>
+    </div>
+
+    <div class="item">
+        <center><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+        <h3>“Simple and effective</h3></center>
+        <blockquote>Thanks to the Funding Circle team for the support. The loan application process was simple to follow and processed quickly. They stepped in to support my business when the banks were useless.”
+<footer> Adrian Coe</footer></blockquote>
+        <div class="carousel-trustpilot"><p><b> Excellent </b><img src="img/stars-trustpilot.png" alt="trust pilot star rating"> based on 1364 reviews <img src="img/trustpilot-logo.png" alt="trust pilot rating"></p></div>
+    </div>
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        </div>
+        </div>
+    </div>
+    <!-- end carousel -->
+    <footer>
+          <div class="footer-featured">
+              <div class="container">
+                <div class="row">
+                    <center>
+                    <div class="col-lg-2 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12 col-md-offset-0">
+                        <img class="img-responsive" src="img/ny-times.png" alt="Funding Circle in New York Times" title="Funding Circle in New York Times"/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive" src="img/business-insider.png" alt="Funding Circle in Business Insider" title="Funding Circle in Business Insider"/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive" src="img/wallstreet.png" alt="Funding Circle in Wall Street Journal" title="Funding Circle in Wall Street Journal"/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-lg-offset-0 col-md-offset-2 col-sm-offset-2">
+                        <img class="img-responsive" src="img/techcrunch.png" alt="Funding Circle in Techcrunch" title="Funding Circle in Techcrunch"/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive" src="img/entrepreneur.png" alt="Funding Circle in Entrepreneur" title="Funding Circle in Entrepreneur"/>
+                    </div>
+                    </center>    
+                    </div>
+                </div>
+              </div>
+          <div class="footer-space"></div>
+      </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript"> 
+// interval is in milliseconds. 1000 = 1 second - so 1000 * 15 = 15 seconds
+$('.carousel').carousel({
+  interval: 1000 * 15
+});
+$(document).ready(function(){ 
+	$('#hover-cap .panel-hover').hover(
+		function(){
+			$(this).find('.caption').slideDown(250); //.fadeIn(250)
+		},
+		function(){
+			$(this).find('.caption').slideUp(250); //.fadeOut(205)
+		}
+	);	
+ 
+});		
+</script>
+  </body>
+</html>

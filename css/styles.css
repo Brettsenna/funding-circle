@@ -1,0 +1,575 @@
+/*Global Styles*/
+body, html {
+    font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+.navbar-toggle .icon-bar {
+   background: #6E90A3; 
+}
+#navbar-lg .nav>li:first-child>a {
+    padding-left:0px;
+}
+.nav>li>a{
+    color:#333E43;
+}
+#navbar-lg .navbar-nav>li>a {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.navbar {
+    margin-bottom:0px;
+}
+.user-nav.navbar-nav>li>a {
+    color: #3DA5D8;
+    padding-bottom: 5px;
+    padding-top: 25px;
+}
+.large-logo {
+    margin-bottom: 15px;
+    max-width:250px;
+}
+.small-brand {
+    padding-top: 10px;
+}
+.md-sub-menu ul.nav {
+    display:inline;
+}
+.country-select_flag {
+    width: 25px;
+}
+ul li .country-select_flag{
+    padding-right: 5px;
+}
+.country-select {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.md-sub-menu .dropdown {
+    margin-top: 10px;
+}
+.cta-nav.user-nav.navbar-nav > li > a {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.cta-nav li {
+    border-left: 1px solid #ccc;
+}
+/*End Global*/
+/*Jumbotron text spacing*/
+.jumbotron.welcome {
+    padding-bottom:60px;
+    padding-top:170px;
+}
+.jumbotron.welcome {
+}
+.jumbotron p {
+    font-size: 15px;
+}
+.jumbotron .h1, .jumbotron h1 {
+    font-size:48px;
+}
+.jumbotron .h3, .jumbotron h3 {
+    font-size:24px;
+    font-weight: bold;
+}
+.jumbotron.welcome .btn-cta {
+    margin:2% 0 5%;
+}
+.jumbotron.welcome{
+  background: url("../img/funding_circle_banner_img.jpg") no-repeat top center; 
+  color:#ffffff;
+}
+/*end Jumbotron*/
+/*Body Styles*/
+.small-header .nav > li > a {
+    text-align:center;
+}
+.offer-row {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    color:#6E90A3;
+}
+.offer-row p {
+    font-size: 16px;
+}
+.offer-row .offer-big {
+    color: #663366;
+}
+.offer-row .flex-container {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #F6F6F6;
+}
+.offer-row .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 800px;
+    background-color: rgba(202,208,211,20);
+}
+.flex-container .flex-item h2 {
+    margin-bottom:20px;
+}
+.flex-item {
+    width: 260px;
+    margin: 0px 10px;
+}
+.flex-container .flex-item:first-child, .flex-container .flex-item:last-child {
+    margin-top:10px;
+}
+.possibilities {
+    background-color: #6E90A3;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.possibilities .panel-default {
+    border: 1px solid #000000;
+    border-radius: 0px;
+    line-height: 75px;
+    height: 200px;
+}
+.possibilities .panel-default p {
+    line-height: 30px;
+    margin-top:15px;
+}
+.possibilities .panel {
+    background: transparent;
+}
+.possibilities .panel-body {
+    vertical-align: middle;
+    display: table-cell;
+    height:200px;
+}
+.possibilities .panel p {
+    font-size: 20px;
+    height: 40px;
+}
+.possibilities .panel .hover-content p {
+    vertical-align: middle;
+}
+/* processes */
+.fc-blue {
+    color: #6E90A3;
+}
+.processes {
+    padding-top: 30px;
+}
+.process-sml {
+    text-align: center;
+}
+.process-sml > div {
+    margin:50px 0px;
+}
+.processes h1 {
+    color: #FF6C0C;
+}
+/* processes overlay *notimplemented yet*/
+#hover-cap .thumbnail {
+	position:relative;
+	overflow:hidden;	
+}
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	color:#fff !important;
+        line-height: normal;
+        vertical-align: middle;
+}
+/* end process overlay*/
+.contact-info.nav > li > a:hover,.contact-info.nav > li > a:active {
+    cursor: default;
+    color: #333e43;
+}
+/* Timeline */
+.timeline,
+.timeline-horizontal {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #CAD0D3;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline .timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline .timeline-item:before,
+.timeline .timeline-item:after {
+  content: "";
+  display: table;
+}
+.timeline .timeline-item:after {
+  clear: both;
+}
+.timeline .timeline-item .timeline-badge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 18px;
+  left: 49%;
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #D8D8D8;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline.timeline-horizontal .timeline-item:last-child .timeline-badge {
+  background-color: #6E90A3;
+}
+.timeline .timeline-item:last-child .timeline-badge {
+  background-color: #6E90A3;
+}
+.timeline .timeline-item .timeline-badge.primary {
+  background: #fff;
+  border: 2px solid #CAD0D3;
+}
+.timeline .timeline-item .timeline-panel {
+  position: relative;
+  width: 46%;
+  float: left;
+  right: 16px;
+  padding: 20px;
+}
+.timeline .timeline-item .timeline-panel .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-item .timeline-panel .timeline-body > p,
+.timeline .timeline-item .timeline-panel .timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline .timeline-item .timeline-panel .timeline-body > p + p {
+  margin-top: 5px;
+}
+.timeline .timeline-item:nth-child(even) .timeline-panel {
+  float: right;
+  left: 16px;
+}
+.sm-timeline.timeline .timeline-item:nth-child(odd) .timeline-panel img {
+    float:right; 
+    margin-left:20px
+}
+.sm-timeline.timeline .timeline-item:nth-child(even) .timeline-panel img {
+    float:left; 
+    margin-right:20px
+}
+.timeline .timeline-item:nth-child(even) .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline .timeline-item .timeline-panel .timeline-body div {
+    display:table-cell
+}
+.timeline-horizontal .timeline-item .timeline-panel .timeline-body div {
+    height: 130px;
+}
+.timeline-horizontal .timeline-item .timeline-panel .timeline-body img {
+    height: 60px;
+}
+.timeline-horizontal {
+  list-style: none;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+  display: inline-block;
+}
+.timeline-horizontal:before {
+  height: 3px;
+  top: auto;
+  bottom: 26px;
+  right: 0;
+  left:0px;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+.timeline-horizontal .timeline-item {
+  display: table-cell;
+  height: 280px;
+  float: none !important;
+  padding-left: 0px;
+  padding-right: 20px;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+.timeline-horizontal .timeline-item .timeline-panel {
+  top: auto;
+  bottom: 64px;
+  display: inline-block;
+  float: none !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align:center;
+}
+.timeline-horizontal .timeline-item .timeline-panel:before {
+  top: auto;
+  bottom: -16px;
+  left: 28px !important;
+  right: auto;
+  border-right: 16px solid transparent !important;
+  border-top: 16px solid #c0c0c0 !important;
+  border-bottom: 0 solid #c0c0c0 !important;
+  border-left: 16px solid transparent !important;
+}
+.timeline-horizontal .timeline-item:before,
+.timeline-horizontal .timeline-item:after {
+  display: none;
+}
+.timeline-horizontal .timeline-item .timeline-badge {
+  top: auto;
+  bottom: 60px;
+  left: 45%;
+}
+/*Timeline end*/
+/*testimonial*/
+.testimonial {
+  background: url("../img/story-bg-img.jpg") no-repeat center center; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.jumbotron.testimonial blockquote {
+    color: #000;
+    border-left: 0px;
+    padding-left: 0px;
+}
+.jumbotron.testimonial blockquote p {
+    font-size: 30px;
+}
+.jumbotron.testimonial blockquote footer {
+    color: #000;
+    font-size: 16px;
+}
+.jumbotron.testimonial blockquote:before {
+    background: black none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 15px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    margin-bottom: 5px;
+}
+.testimonial-descr {
+    background-color: #DAC5A2;
+    color: #000000;
+    padding:10px;
+    position:relative;
+    bottom:-275px;
+}
+.jumbotron.testimonial .testimonial-descr p {
+    margin-bottom:5px;
+}
+.sml-testimonial {
+    background-color: #dac5a2;
+}
+.sml-testimonial .testimonial-descr {
+    bottom: 0px;
+}
+.testimonial-descr .arrow-down {
+    position:relative;
+    top:-10px;
+}
+/*end testimonial */
+/*quotes carousel*/
+.carousel .item {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.carousel .item i {
+    color: #FF6C0C;
+}
+.carousel .item h3 {
+    color: #6E90A3;
+}
+.carousel-trustpilot {
+    text-align: center;
+}
+.carousel-trustpilot
+.carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+   font-size: 30px;
+    height: 30px;
+    margin-top: -10px;
+    width: 30px;
+}
+.carousel {
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+.carousel-indicators {
+    display: none;
+}
+.carousel blockquote {
+    border-left: 0px;
+}
+.carousel blockquote footer {
+    margin-top: 20px;
+}
+/*quotes carousel*/
+.btn-cta {
+    background-color: #903B8D;
+    color: #ffffff;
+}
+.btn-cta:hover {
+    color: #cccccc;
+}
+.small-header .btn-cta {
+    margin-top:10px;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+/* Footer Styles */
+.footer-space {
+    height: 100px;
+    background:#304653;
+    display:block;
+}
+.footer-featured {
+    background:#CAD0D3;
+    padding:15px 0px;
+}
+.footer-featured img {
+    min-height: px;
+}
+.footer-featured .row div {
+    min-height: 50px;
+}
+
+/* media queries Bootstrap default */
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        .testimonial-descr {
+            bottom: -100px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .offer-row .flex-container {
+            width: 100%;
+        }
+        .contact-info.nav > li > a {
+            padding:5px 15px
+        }
+        .testimonial-descr {
+            bottom: -100px;
+        }
+        .testimonial {
+            margin-bottom: 50px;
+        }
+        .jumbotron.welcome {
+            padding-bottom: 48px;
+            padding-top: 48px;
+            background: rgba(0, 0, 0, 0) url("../img/funding_circle_banner_img.jpg") no-repeat scroll -400px top; 
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .offer-row .flex-container {
+            width: auto;
+        }
+        .testimonial-descr {
+            bottom: -100px;
+        }
+        .contact-info.nav > li > a {
+            padding:5px 15px
+        }
+        .testimonial {
+            margin-bottom: 50px;
+        }
+        .jumbotron.welcome {
+            padding-bottom: 48px;
+            padding-top: 48px;
+            background: rgba(0, 0, 0, 0) url("../img/funding_circle_banner_img.jpg") no-repeat scroll right top; 
+        }
+        .flex-item {
+            width: 100%
+        }
+        .flex-container .flex-item:first-child {
+            margin-top: 0px;
+        }
+        .contact-info.nav > li > a {
+            padding:5px 15px
+        }
+        .carousel {
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .offer-row .flex-container {
+            display: inline-block;
+            width: auto;
+        }
+        .flex-item {
+            width: 100%;
+        }
+        .flex-container .flex-item, .flex-container .flex-item:last-child{
+            margin:20px 0px;
+        }
+        .flex-container .flex-item:first-child {
+            margin-top: 0px;
+        }
+        .jumbotron.welcome {
+            padding-bottom: 48px;
+            padding-top: 48px;
+            background: rgba(0, 0, 0, 0) url("../img/funding_circle_banner_img.jpg") no-repeat scroll -900px top; 
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        .offer-row .flex-container {
+            display: inline-block;
+            width: auto;
+        }
+        .flex-item {
+            width: 100%;
+        }
+        .testimonial-descr {
+            bottom: 0px;
+        }
+        .flex-container .flex-item, .flex-container .flex-item:last-child{
+            margin:20px 0px;
+        }
+        .flex-container .flex-item:first-child {
+            margin-top: 0px;
+        }
+        .jumbotron.welcome {
+            padding-bottom: 48px;
+            padding-top: 48px;
+            background: rgba(0, 0, 0, 0) url("../img/funding_circle_banner_img.jpg") no-repeat scroll -900px top; 
+        }
+    }
