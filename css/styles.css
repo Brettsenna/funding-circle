@@ -350,7 +350,7 @@ ul li .country-select_flag{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.jumbotron.testimonial blockquote {
+/*.jumbotron.testimonial blockquote {
     color: #000;
     border-left: 0px;
     padding-left: 0px;
@@ -372,7 +372,32 @@ ul li .country-select_flag{
     top: 0;
     width: 150px;
     margin-bottom: 5px;
+}*/
+blockquote.fc-quote {
+    color: #000;
+    border-left: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
 }
+blockquote.fc-quote p {
+    font-size: 30px;
+}
+blockquote.fc-quote footer {
+    color: #000;
+    font-size: 16px;
+}
+blockquote.fc-quote:before {
+    background: black none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 15px;
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
 .testimonial-descr {
     background-color: #DAC5A2;
     color: #000000;
