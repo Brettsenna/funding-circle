@@ -350,29 +350,6 @@ ul li .country-select_flag{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/*.jumbotron.testimonial blockquote {
-    color: #000;
-    border-left: 0px;
-    padding-left: 0px;
-}
-.jumbotron.testimonial blockquote p {
-    font-size: 30px;
-}
-.jumbotron.testimonial blockquote footer {
-    color: #000;
-    font-size: 16px;
-}
-.jumbotron.testimonial blockquote:before {
-    background: black none repeat scroll 0 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 15px;
-    position: absolute;
-    top: 0;
-    width: 150px;
-    margin-bottom: 5px;
-}*/
 blockquote.fc-quote {
     color: #000;
     border-left: 0px;
