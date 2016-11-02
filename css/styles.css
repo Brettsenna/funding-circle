@@ -151,6 +151,27 @@ ul li .country-select_flag{
 .possibilities .panel .hover-content p {
     vertical-align: middle;
 }
+#possibilities-carousel .panel-body {
+    text-align:center;
+    width: 100%;
+    display: inline-block;
+}
+#possibilities-carousel .panel-body img {
+    display: inline-block;
+}
+#possibilities-carousel .carousel-indicators {
+    bottom: -30px;
+}
+#possibilities-carousel .carousel-indicators li.active {
+    border-width: 0px;
+    background-color: #000000;
+    opacity: .3;
+}
+#possibilities-carousel .carousel-indicators li {
+    border-width: 0px;
+    background-color: #000000;
+    opacity: .1;
+}
 /* processes */
 .fc-blue {
     color: #6E90A3;
@@ -421,7 +442,7 @@ blockquote.fc-quote:before {
     margin-top: 75px;
     margin-bottom: 25px;
 }
-.carousel-indicators {
+#myCarousel .carousel-indicators {
     display: none;
 }
 .carousel blockquote {
